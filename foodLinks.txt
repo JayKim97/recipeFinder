@@ -1,4 +1,3 @@
-Type;Name;Link
 Appetizer_Recipes;Ambrosia I;https://recipes.fandom.com/wiki/Ambrosia_I
 Appetizer_Recipes;Anchovy Antipasto;https://recipes.fandom.com/wiki/Anchovy_Antipasto
 Appetizer_Recipes;Anchovy-stuffed Olives;https://recipes.fandom.com/wiki/Anchovy-stuffed_Olives
@@ -5019,7 +5018,6 @@ Pudding_Recipes;Pudding;https://recipes.fandom.com/wiki/Pudding
 Pudding_Recipes;Pudding I;https://recipes.fandom.com/wiki/Pudding_I
 Pudding_Recipes;Pudding Russian-style;https://recipes.fandom.com/wiki/Pudding_Russian-style
 Pudding_Recipes;Pudding with Spiced Apricots;https://recipes.fandom.com/wiki/Pudding_with_Spiced_Apricots
-Pudding_Recipes;PUDDING; Sausage & Tomatoes - in a skillet;https://recipes.fandom.com/wiki/PUDDING;_Sausage_%26_Tomatoes_-_in_a_skillet
 Pudding_Recipes;Pudim de Queijo;https://recipes.fandom.com/wiki/Pudim_de_Queijo
 Pudding_Recipes;Pwdin Eryri;https://recipes.fandom.com/wiki/Pwdin_Eryri
 Pudding_Recipes;Raspberry Pudding with Cream;https://recipes.fandom.com/wiki/Raspberry_Pudding_with_Cream
@@ -7470,7 +7468,6 @@ Pudding_Recipes;Pudding;https://recipes.fandom.com/wiki/Pudding
 Pudding_Recipes;Pudding I;https://recipes.fandom.com/wiki/Pudding_I
 Pudding_Recipes;Pudding Russian-style;https://recipes.fandom.com/wiki/Pudding_Russian-style
 Pudding_Recipes;Pudding with Spiced Apricots;https://recipes.fandom.com/wiki/Pudding_with_Spiced_Apricots
-Pudding_Recipes;PUDDING; Sausage & Tomatoes - in a skillet;https://recipes.fandom.com/wiki/PUDDING;_Sausage_%26_Tomatoes_-_in_a_skillet
 Pudding_Recipes;Pudim de Queijo;https://recipes.fandom.com/wiki/Pudim_de_Queijo
 Pudding_Recipes;Pwdin Eryri;https://recipes.fandom.com/wiki/Pwdin_Eryri
 Pudding_Recipes;Raspberry Pudding with Cream;https://recipes.fandom.com/wiki/Raspberry_Pudding_with_Cream
