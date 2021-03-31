@@ -25,16 +25,22 @@ def userIng(newIngs):
     user.close()
 
 
-text = """
-27-PRODUCE
-06038318654 PCO MUSH ENOKI = MR
+def recipt_parser(text):
+    ingList = pre_process()
+    newIngs = new_ingredients(text, ingList)
+    userIng(newIngs)
 
-4083 POTATO WHITE MR
-0.425 kg @ $4. 39/kg
-4166 ONIONS SWEET MR
 
-0.485 kg @ $4. 39/kg
-"""
-ingList = pre_process()
-newIngs = new_ingredients(text, ingList)
-userIng(newIngs)
+# text = """
+# 27-PRODUCE
+# 06038318654 PCO MUSH ENOKI = MR
+
+# 4083 POTATO WHITE MR
+# 0.425 kg @ $4. 39/kg
+# 4166 ONIONS SWEET MR
+
+# 0.485 kg @ $4. 39/kg
+# """
+# ingList = pre_process()
+# newIngs = new_ingredients(text, ingList)
+# userIng(newIngs)

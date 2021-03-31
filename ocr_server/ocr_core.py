@@ -14,7 +14,7 @@ def ocr_core(filename):
     """
     # text = pytesseract.image_to_string(Image.open(filename))
 
-    text = pytesseract.image_to_string(cvToPil(filename))
+    text = pytesseract.image_to_string(Image.open(filename))
     return text
 
 
@@ -113,7 +113,7 @@ def removeNoneEnglish(text):
         print(res)
 
 
-img = cv2.imread("./static/receipts/test3.jpg")
-text = ocr_core(img)
-print(text)
+# img = cv2.imread("./static/receipts/test3.jpg")
+# text = ocr_core(img)
+# print(text)
 # removeNoneEnglish(text)

@@ -1,9 +1,12 @@
 import os
+import sys
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
 
 # import our OCR function
 from ocr_core import ocr_core
+from recipt_parser import recipt_parser
+from recipesFinder import recipesFinder
 
 # define a folder to store and later serve the images
 UPLOAD_FOLDER = os.path.join('static', 'uploads')
@@ -47,13 +50,18 @@ def upload_page():
 
             # call the OCR function on it
             extracted_text = ocr_core(file)
+            # print(extracted_text, file=sys.stderr)
+            recipt_parser(extracted_text)
+            recipes = recipesFinder()
+            # print(recipes, file=sys.stderr)
             full_filename = os.path.join(
                 app.config['UPLOAD_FOLDER'], filename)
             # extract the text and display it
             return render_template('upload.html',
                                    msg='Successfully processed',
                                    extracted_text=extracted_text,
-                                   img_src=full_filename)
+                                   img_src=full_filename,
+                                   recipes=recipes)
     elif request.method == 'GET':
         return render_template('upload.html')
 

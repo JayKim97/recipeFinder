@@ -1,8 +1,4 @@
-class Recipe:
-    def __init__(self, name, link, ings):
-        self.name = name
-        self.link = link
-        self.ings = ings
+from Recipe import Recipe
 
 
 def pre_process():
@@ -30,7 +26,7 @@ def recipeCheck(recipe, userIngs):
     for recIng in recipe.ings:
         if not recipe.ings[recIng]:
             return
-    print(recipe.name + " LINK: "+recipe.link)
+    return [recipe.name, recipe.link]
 
 
 def thisIsForTest():
@@ -40,7 +36,15 @@ def thisIsForTest():
     return userIngs
 
 
-recipes = pre_process()
-userIngs = thisIsForTest()
-for recipe in recipes:
-    recipeCheck(recipe, userIngs)
+def recipesFinder():
+    recipes = pre_process()
+    userIngs = thisIsForTest()
+    possibleRec = []
+    for recipe in recipes:
+        pos = recipeCheck(recipe, userIngs)
+        if pos != None:
+            possibleRec.append(pos)
+    return possibleRec
+
+
+# rec = recipesFinder()
