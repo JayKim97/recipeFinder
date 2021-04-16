@@ -12,6 +12,7 @@ tesseract = "*"
 flask = "*"
 opencv-python = "*"
 nltk = "*"
+pyrebase = "*"
 
 [requires]
 python_version = "3.8"

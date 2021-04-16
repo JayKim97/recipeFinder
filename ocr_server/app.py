@@ -1,6 +1,8 @@
 import os
 import sys
-from flask import Flask, render_template, request
+import pyrebase
+from functools import wraps
+from flask import Flask, render_template, request, redirect, url_for, session
 from werkzeug.utils import secure_filename
 
 # import our OCR function
@@ -9,12 +11,29 @@ from recipt_parser import recipt_parser
 from recipesFinder import recipesFinder
 
 # define a folder to store and later serve the images
+config = {
+    "apiKey": "AIzaSyDndI7zOsl3kUQptIIZenw0eQ4B7lA8jzA",
+    "authDomain": "recipefinder-f1bd3.firebaseapp.com",
+    "databaseURL": "https://recipefinder-f1bd3-default-rtdb.firebaseio.com",
+    "projectId": "recipefinder-f1bd3",
+    "storageBucket": "recipefinder-f1bd3.appspot.com",
+    "messagingSenderId": "957469821622",
+    "appId": "1:957469821622:web:453fb296ca38bed40b3417",
+    "measurementId": "G-P7KGSFSPE1"
+}
+
+firebase = pyrebase.initialize_app(config)
+auth = firebase.auth()
+db = firebase.database()
+
+
 UPLOAD_FOLDER = os.path.join('static', 'uploads')
 
 # allow files of a specific type
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg'])
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # function to check the file extension
 

@@ -2,3 +2,6 @@ test.py
 test.txt
 testSpace/
 out.txt
+*.jpg
+.vscode/
+__pycache__/

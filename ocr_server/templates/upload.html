@@ -23,6 +23,12 @@
   
    {% if extracted_text %}
      <p> The extracted text from the image above is: <b> {{ extracted_text }} </b></p>
+     <br>
+     <ul>
+       {%for rec in recipes %}
+        <li><a href={{rec[1]}}>{{rec[0]}}</a></li>
+       {% endfor %}
+     </ul>
   
    {% else %}
      The extracted text will be displayed here
