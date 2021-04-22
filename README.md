@@ -18,7 +18,7 @@ python3 app.py
 
 Upload image of your recipt it will show all the recipes you can create.
 
-<img src="https://github.com/JayKim97/recipeFinder/blob/main/scraper/readme.png" width="250">
+<img src="https://github.com/JayKim97/recipeFinder/blob/main/scraper/readme.png" width="400">
 
 ## Current Features
 
