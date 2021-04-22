@@ -16,6 +16,7 @@ python3 app.py
 
 ## Current Features
 
+Current status: MVP
 Recipe Collections
 
 <ul>
@@ -26,8 +27,8 @@ Recipe Collections
 Features
 
 <ul>
-  <li>Recipt Image Recognition</li>
-  <li></li>
+  <li>Recipt image recognition for grocery</li>
+  <li>Recipe search using user ingredients</li>
 </ul>
 
 ## Project Status
