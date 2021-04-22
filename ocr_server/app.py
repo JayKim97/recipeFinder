@@ -38,6 +38,15 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 # function to check the file extension
 
 
+def isAuthenticated(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if not auth.current_user != None:
+            return redirect(url_for('signup'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+
 def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -47,12 +56,12 @@ def allowed_file(filename):
 
 @app.route('/')
 def home_page():
-    return render_template('index.html')
+    return render_template('upload.html')
 
 # route and function to handle the upload page
 
 
-@app.route('/upload', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def upload_page():
     if request.method == 'POST':
         # check if there is a file in the request
