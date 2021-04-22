@@ -14,6 +14,12 @@ pipenv install --ignore-pipfile
 python3 app.py
 ```
 
+## Usage
+
+Upload image of your recipt it will show all the recipes you can create.
+
+<img src="https://github.com/JayKim97/recipefinder/scraper/readme.png" width="250">
+
 ## Current Features
 
 Current status: MVP
