@@ -13,8 +13,8 @@ flask = "*"
 opencv-python = "*"
 nltk = "*"
 pyrebase = "*"
-pycryptodome = "*"
-requests = "*"
+pycryptodome = "==3.6.6"
+requests = "==2.20.0"
 
 [requires]
 python_version = "3.8"
