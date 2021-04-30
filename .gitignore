@@ -1,6 +1,7 @@
 test.py
 test.txt
 testSpace/
+scraper/
 out.txt
 *.jpg
 .vscode/
