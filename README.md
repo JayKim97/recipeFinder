@@ -1,3 +1,7 @@
+# Project Status MVP
+
+Recipe Finder is currently in the proccess of moving the databse to Mongodb and parsing pluralization on ingredients/recipes
+
 # recipeFinder
 
 Recipe Finder is web application allowing you to keep track of ingredients you have and display all the possible recipes you can try.
